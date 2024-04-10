@@ -1,0 +1,68 @@
+:root {
+	--bittersweet: #ee6352ff;
+	--emerald: #59cd90ff;
+	--picton-blue: #3fa7d6ff;
+	--xanthous: #fac05eff;
+}
+
+#clock {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border: 5px solid var(--bittersweet);
+	background-color: var(--xanthous);
+	border-radius: 50%;
+	margin: 20px auto;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+	position: absolute;
+	width: 60%;
+	height: 60%;
+	border-radius: 20px;
+	background-color: var(--picton-blue);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	padding: 1em;
+}
+
+.hand {
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	transform-origin: 50% 100%;
+	background-color: black;
+}
+
+#hour-hand {
+	width: 6px;
+	height: 50px;
+}
+
+#minute-hand {
+	width: 4px;
+	height: 70px;
+}
+
+#second-hand {
+	width: 2px;
+	height: 90px;
+	background-color: var(--bittersweet);
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	gap: 1em;
+}
+
+button {
+	font-size: 1em;
+	padding: 0.5em 1em;
+	border: none;
+	border-radius: 5px;
+	background-color: var(--bittersweet);
+	color: white;
+	cursor: pointer;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
